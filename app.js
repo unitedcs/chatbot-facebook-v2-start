@@ -440,7 +440,7 @@ function handleDialogFlowResponse(sender, response) {
         handleMessages(messages, sender);
 	} else if (responseText == '' && !isDefined(action)) {
 		//dialogflow could not evaluate input.
-		sendTextMessage(sender, "I'm not sure what you want. Can you be more specific?");
+		sendTextMessage(sender, "say that aagain");
 	} else if (isDefined(responseText)) {
 		sendTextMessage(sender, responseText);
 	}
